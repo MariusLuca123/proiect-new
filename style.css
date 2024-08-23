@@ -26,24 +26,22 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 22px;
-    padding-left: 25px;
+    padding-top: 18px;
     background-color: rgba(0, 0, 0, 0);
-    top: 0;
-    left: 0;
-    width: 90%;
-    z-index: 1000; 
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
 }
 
 .logo {
-    font-size: 18px;
-    padding-right: 420px;
-    color:white;
-    white-space: nowrap;
-    margin-left:20px;
+    font-size: 16px;
+    padding-right: 220px;
+    color: white;
+    margin-left: 45px;
     font-family: akzidenz-grotesk, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: 400%;
+    white-space: nowrap;
 }
 
 nav ul {
@@ -57,7 +55,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 50px;
+    margin-left: 65px;
 }
 
 #alb {
@@ -70,10 +68,11 @@ nav ul li {
 
 .search {
     position: relative;
-    width: 380px;
-    font-size: 18px; 
+    width: 200px;
+    font-size: 18px;
     top: 9px;
-    left: 65px;
+    left: -6%;
+    right: 0%;
 }
 
 #color-search {
@@ -118,7 +117,7 @@ input[type="search"] {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
     color:rgba(255, 255, 255, .66);
 }
 
@@ -225,34 +224,43 @@ nav ul li a {
 }
 
 .chenar {
-    width:100%;
-    height:450px;
+    width: 100%;
+    height: 480px;
     background-color: rgba(18, 168, 179, 0);
     margin-bottom: 30px;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 300px);
-    grid-auto-columns: 70px;
-    gap: 30px 50px; 
-    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+    gap: 30px 2px;
 }
 
 .chenar {
-    border: 2px solid #00000000;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: calc(25% - 40px);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-image: initial;
     padding: 10px;
-    background-color: #ffffff00;
     border-radius: 7px;
 }
 
 .imagini {
-    width: 305px;
-    height: 480px;
+    width: 320px;
+    height: 520px;
+    box-shadow: rgba(113, 113, 113, 0.255) 0px 10px 20px 5px;
+    z-index: 1;
+    background-size: 100%;
     border-radius: 7px;
-    box-shadow: 0px 10px 20px 5px #71717141;
-    z-index:1;
-    background-size: 100% auto;
 }
 
 .imagini:hover {
@@ -262,15 +270,17 @@ nav ul li a {
 
 .image-overlay-container {
     position: relative;
-    height: 550px;
-    padding:0%;
+    height: 500px;
     width: 100%;
+    padding: 0%;
+    overflow: hidden;
 }
 
 .image {
     width: 100%;
-    height: 550px;
+    height: 680px;
     filter: brightness(60%);
+    margin-top: -90px;
 }
 
 .image:hover {
@@ -280,17 +290,17 @@ nav ul li a {
 .text-overlay{
     position: absolute;
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0);
     left: 50%;
     z-index: 2;
     font-size: 2.2em;
     line-height: 0.1;
-    top:0%;
+    top: 0%;
 }
 
 #text-1 {
-    margin-top:210px;
-    color: rgba(255, 255, 255, .5);;
+    margin-top: 220px;
+    color: rgba(255, 255, 255, 0.5);
     font-family: akzidenz-grotesk, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -445,4 +455,5 @@ nav ul li a {
 #tw:hover {
     transform: translateY(-10px);
 }
+
 
